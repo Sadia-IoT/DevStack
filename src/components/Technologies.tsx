@@ -119,7 +119,7 @@ const Technologies = () => {
                 </p>
 
                 {/* Bottom Info */}
-                <div className="mt-5 flex items-center justify-between border-t pt-4 text-xs text-gray-500">
+                <div className="mt-5 flex flex-wrap items-center justify-between gap-2 border-t pt-4 text-xs text-gray-500">
                   <span>{technology.category}</span>
 
                   <span>{technology.difficulty}</span>
