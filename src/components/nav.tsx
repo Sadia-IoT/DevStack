@@ -1,13 +1,19 @@
+import { useState } from "react";
 import Logo from "../assets/logo-text.png";
 
 const Nav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
+    
     <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
       {/* mobile view */}
-      <button className="text-xl md:hidden">
-        ☰
-      </button>
+  <button
+  onClick={() => setIsMenuOpen(!isMenuOpen)}
+  className="text-xl md:hidden"
+>
+  {isMenuOpen ? "✕" : "☰"}
+</button>
       <img src={Logo} alt="logo" className="w-28 md:w-32"/>
 
       <ul className="hidden md:flex gap-4 items-center">
@@ -26,8 +32,43 @@ const Nav = () => {
             Sign Up</button> 
         
       </div>
+     </div> 
 
-       </div>    
+     {isMenuOpen && (
+  <div className="border-t border-gray-200 bg-white px-4 py-4 md:hidden">
+    <ul className="flex flex-col gap-4">
+      <li>
+  <a href="#" onClick={() => setIsMenuOpen(false)}>
+    Home
+  </a>
+</li>
+    <li>
+  <a href="#" onClick={() => setIsMenuOpen(false)}>
+    Technologies
+  </a>
+</li>
+
+<li>
+  <a href="#" onClick={() => setIsMenuOpen(false)}>
+    Projects
+  </a>
+</li>
+
+<li>
+  <a href="#" onClick={() => setIsMenuOpen(false)}>
+    About
+  </a>
+</li>
+
+<li>
+  <a href="#" onClick={() => setIsMenuOpen(false)}>
+    Contact
+  </a>
+</li>
+    </ul>
+  </div>
+)} 
+
     </nav>
   );
 };

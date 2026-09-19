@@ -3,6 +3,8 @@ import Banner from "./components/Banner"
 import Technologies from "./components/Technologies"
 import Projects from "./components/Projects";
 import { Suspense } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 type ProjectType = {
   id?: number;
@@ -30,6 +32,7 @@ function App() {
        <Suspense fallback={<h2>Loading projects...</h2>}>
         <Projects projectPromise={projectPromise}/>
        </Suspense>
+       <ToastContainer />
        
 
       
