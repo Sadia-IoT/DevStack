@@ -10,7 +10,7 @@ const Nav = () => {
       </button>
       <img src={Logo} alt="logo" className="w-28 md:w-32"/>
 
-      <ul className="hidden md-flex gap-4 items-center">
+      <ul className="hidden md:flex gap-4 items-center">
         <li><a href="#" >Home</a></li>
         <li><a href="#">Technologies</a></li>
         <li><a href="#">Projects</a></li>
