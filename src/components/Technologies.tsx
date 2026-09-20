@@ -19,6 +19,16 @@ const badgeColors: Record<string, string> = {
   Fast: "bg-green-100 text-green-600",
   Standard: "bg-purple-100 text-purple-600",
   "Top SQL": "bg-yellow-100 text-yellow-600",
+   Flexible: "border-cyan-200 bg-cyan-100 text-cyan-600",
+  Combo: "border-orange-200 bg-orange-100 text-orange-600",
+  Ubiquitous: "border-indigo-200 bg-indigo-100 text-indigo-600",
+  Modern: "border-violet-200 bg-violet-100 text-violet-600",
+  Robust: "border-red-200 bg-red-100 text-red-600",
+  Classic: "border-gray-200 bg-gray-100 text-gray-600",
+  Containers: "border-sky-200 bg-sky-100 text-sky-600",
+  Orchestration: "border-teal-200 bg-teal-100 text-teal-600",
+  Essential: "border-amber-200 bg-amber-100 text-amber-600",
+  Collaborative: "border-rose-200 bg-rose-100 text-rose-600",
 };
 
 const Technologies = () => {
@@ -93,7 +103,7 @@ const Technologies = () => {
             technologies.map((technology) => (
               <div
                 key={technology.id}
-                className="relative rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+                className="relative rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:bg-pink-50 hover:-translate-y-0.5"
               >
                 {/* Badge */}
                 <span

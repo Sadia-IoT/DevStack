@@ -18,10 +18,10 @@ const Banner = () => {
           side by side, and put together the stack that fits your next project.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row sm:justify-center gap-4 md:justify-start">
-          <button className="rounded-full bg-linear-to-r from-orange-500 via-pink-500 to-violet-600 px-6 py-3 font-semibold text-white">
+          <button className="rounded-full bg-linear-to-r from-orange-500 via-pink-500 to-violet-600 px-6 py-3 font-semibold text-white transition hover:text-black ">
             Explore Technologies
           </button>
-          <button className="rounded-full border border-gray-300 bg-white px-6 py-3 font-semibold text-gray-700">
+          <button className="rounded-full border border-gray-300 bg-white px-6 py-3 font-semibold text-gray-700 transition hover:border-violet-400 hover:text-pink-400 ">
             Learn More
           </button>
         </div>
