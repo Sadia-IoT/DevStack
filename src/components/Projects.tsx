@@ -1,5 +1,4 @@
 import { use, type ComponentProps } from "react";
-import AvailableStack from "./AvailableStack";
 
 type projectType = ComponentProps<typeof AvailableStack>["projects"][number];
 
