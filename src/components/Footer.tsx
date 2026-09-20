@@ -1,30 +1,30 @@
 import Logo from "../assets/logo-text.png";
 const Footer = () => {
   return (
-    <footer className="mt-16 border-t border-gray-200 bg-white">
+    <footer className="mt-20 border-t border-gray-200 bg-white">
       <div className="container mx-auto grid grid-cols-1 gap-8 px-6 py-10 sm:grid-cols-2 lg:grid-cols-4">
-        <div>
-          <img src={Logo} alt="DevStack" className="w-24" />
-          <p className="mt-3 max-w-xs text-xs leading-5 text-gray-500">
+        <div className="text-center sm:text-left">
+          <img src={Logo} alt="DevStack" className="mx-auto w-24 sm:mx-0" />
+          <p className="mx-auto mt-3 max-w-xs text-xs leading-5 text-gray-500 sm:mx-0">
             {" "}
             Build your ideal development stack with the right technologies for
             your next project.
           </p>
-          <div className="mt-4 flex gap-4 text-xs text-gray-500">
-  <a href="#" className="hover:text-black font-bold">
+          <div className="mt-4 flex justify-center gap-4 text-xs text-gray-500 sm:justify-start">
+  <a href="#" className="font-bold hover:text-black">
     GitHub
   </a>
-
-  <a href="#" className="hover:text-black font-bold">
+     <span className="sm:hidden">•</span>
+  <a href="#" className="font-bold hover:text-black ">
     Twitter
   </a>
-
-  <a href="#" className="hover:text-black font-bold">
+    <span className="sm:hidden">•</span>
+  <a href="#" className="font-bold hover:text-black ">
     LinkedIn
   </a>
 </div>
         </div>
-        <div>
+        <div className="hidden sm:block">   {/*sm:block mean hidden for small device and showing above 640px screen*/}
           <h3 className="text-xs font-semibold uppercase text-gray-800">
             Product
           </h3>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         {/* Company */}
-        <div>
+        <div className="hidden sm:block">
           <h3 className="text-xs font-semibold uppercase text-gray-800">
             Company
           </h3>
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         {/* Legal */}
-        <div>
+        <div className="hidden sm:block ">
           <h3 className="text-xs font-semibold uppercase text-gray-800">
             Legal
           </h3>
@@ -95,7 +95,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-100">
-        <div className="container mx-auto flex flex-col gap-2 px-6 py-4 text-xs text-gray-400 sm:flex-row sm:items-center sm:justify-between">
+        <div className="container mx-auto flex items-center gap-3 px-6 py-4 text-xs text-gray-400 justify-between">
           <p>© 2026 DevStack. All rights reserved.</p>
 
           <div className="flex gap-4">
