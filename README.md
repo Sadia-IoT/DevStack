@@ -21,7 +21,7 @@ Dev Stack Builder is a simple and responsive web application that helps users ex
 - Create and customize technology stack and get instant notifications when adding or removing technologies
 - Easily add or remove technologies from the stack
 
-# ❓ React Questions
+#  React Questions
 
 ### 1. What is JSX, and why is it used in React?
 
