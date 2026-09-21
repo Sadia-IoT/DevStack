@@ -59,11 +59,11 @@ const Nav = () => {
           </li>
         </ul>
         <div className="flex items-center gap-3 ">
-          <button className="text-sm text-gray-600 sm:block rounded-lg border border-gray-400 px-4 py-2 text-gray-700 transition hover:bg-gray-200">
+          <button className="text-sm text-gray-600 sm:block rounded-lg border border-gray-400 px-4 py-2 text-gray-700 transition-all hover:bg-gray-200">
             Sign In
           </button>
 
-          <button className="rounded-full bg-linear-to-r from-orange-500 via-pink-500 to-violet-600 px-5 py-2 text-sm font-semibold text-white hover:-translate-y-0.5 hover:text-black">
+          <button className="rounded-full bg-linear-to-r from-orange-500 via-pink-500 to-violet-600 px-5 py-2 text-sm font-semibold text-white tansition-all hover:-translate-y-0.5 hover:text-black">
             Sign Up
           </button>
         </div>
